@@ -1,0 +1,19 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { ErrorRoutingModule } from './error-routing.module';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { ErrorComponent } from './error.component';
+
+
+@NgModule({
+  declarations: [
+    NotFoundComponent,
+    ErrorComponent
+  ],
+  imports: [
+    CommonModule,
+    ErrorRoutingModule
+  ]
+})
+export class ErrorModule { }
